@@ -1,6 +1,6 @@
 %define name mirror
 %define version 2.9
-%define release %mkrel 6
+%define release %mkrel 7
 
 Name: %name
 Version: %version
@@ -42,6 +42,8 @@ install -m 644 %{name}.defaults $RPM_BUILD_ROOT/%{_datadir}/%{name}
 
 ln -sf %{name}.pl $RPM_BUILD_ROOT/%{_bindir}/%{name}
 
+mv $RPM_BUILD_ROOT/%{_mandir}/man1/mm.1 $RPM_BUILD_ROOT/%{_mandir}/man1/mm-mirror.1
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -56,6 +58,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(0644,root,root,0755)
 %{_datadir}/%{name}
 %{_mandir}/man1/%{name}.1*
-%{_mandir}/man1/mm.1*
+%{_mandir}/man1/mm-mirror.1*
 %doc README.txt *.html CHANGES*
 %doc %{name}.nightly support/cyber-patches support/lstest.pl
