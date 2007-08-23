@@ -13,7 +13,7 @@ URL: http://sunsite.doc.ic.ac.uk/packages/%{name}/
 Patch: %{name}-%{version}-mandrake.patch.bz2
 Patch1: %{name}-no-directory-goback.patch.bz2
 Patch2: %{name}-ftp.pl_wupatch.patch.bz2
-BuildRequires: patch, fileutils
+BuildRequires: patch, coreutils
 Requires: perl, perl-base
 BuildArchitectures: noarch
 BuildRoot: %{_tmppath}/%{name}-%buildoot
