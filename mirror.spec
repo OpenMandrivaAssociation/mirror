@@ -1,6 +1,6 @@
 %define name mirror
 %define version 2.9
-%define release %mkrel 8
+%define release %mkrel 9
 
 Name: %name
 Version: %version
@@ -13,6 +13,7 @@ URL: http://sunsite.doc.ic.ac.uk/packages/%{name}/
 Patch: %{name}-%{version}-mandrake.patch.bz2
 Patch1: %{name}-no-directory-goback.patch.bz2
 Patch2: %{name}-ftp.pl_wupatch.patch.bz2
+Patch3: %{name}-deldir.patch.bz2
 BuildRequires: patch, coreutils
 Requires: perl, perl-base
 BuildArchitectures: noarch
@@ -28,6 +29,7 @@ Perl program to mirror FTP sites.
 %patch -p1 -b .mdk
 %patch1 -p1 -b .sec
 %patch2 -p0 -b .wu
+%patch3 -p0 -b .dd
 
 %install
 rm -rf $RPM_BUILD_ROOT
