@@ -17,7 +17,6 @@ Patch3: %{name}-deldir.patch.bz2
 BuildRequires: patch, coreutils
 Requires: perl, perl-base
 BuildArchitectures: noarch
-BuildRoot: %{_tmppath}/%{name}-%buildoot
 
 %description
 Perl program to mirror FTP sites.
