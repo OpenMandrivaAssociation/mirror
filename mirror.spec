@@ -1,6 +1,6 @@
 %define name mirror
 %define version 2.9
-%define release %mkrel 9
+%define release %mkrel 11
 
 Name: %name
 Version: %version
