@@ -63,3 +63,62 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man1/mm-mirror.1*
 %doc README.txt *.html CHANGES*
 %doc %{name}.nightly support/cyber-patches support/lstest.pl
+
+
+%changelog
+* Fri Dec 10 2010 Oden Eriksson <oeriksson@mandriva.com> 2.9-13mdv2011.0
++ Revision: 620365
+- the mass rebuild of 2010.0 packages
+
+* Fri Sep 04 2009 Thierry Vignaud <tv@mandriva.org> 2.9-12mdv2010.0
++ Revision: 430050
+- rebuild
+
+* Tue Jul 29 2008 Thierry Vignaud <tv@mandriva.org> 2.9-11mdv2009.0
++ Revision: 252543
+- rebuild
+
+* Thu Jan 03 2008 Olivier Blin <oblin@mandriva.com> 2.9-9mdv2008.1
++ Revision: 140954
+- restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+
+* Sat Sep 22 2007 Bruno Cornec <bcornec@mandriva.org> 2.9-9mdv2008.0
++ Revision: 92289
+- Adds SOURCES/mirror-deldir.patch.bz2 to fix bug #33248
+  (Cf: http://qa.mandriva.com/show_bug.cgi?id=33248)
+
+* Thu Aug 23 2007 Thierry Vignaud <tv@mandriva.org> 2.9-8mdv2008.0
++ Revision: 70133
+- fileutils, sh-utils & textutils have been obsoleted by coreutils a long time ago
+
+* Mon May 07 2007 Lenny Cartier <lenny@mandriva.org> 2.9-7mdv2008.0
++ Revision: 23987
+- Fixed manpage naming (Bug #19040)
+- Import mirror
+
+
+
+* Tue Jan 03 2006 Lenny Cartier <lenny@mandriva.com> 2.9-6mdk
+- rebuild
+
+* Tue Nov 09 2004 Lenny Cartier <lenny@mandrakesoft.com> 2.9-5mdk
+- rebuild
+
+* Tue Oct 07 2003 Lenny Cartier <lenny@mandrakesoft.com> 2.9-4mdk
+- from Bruno Cornec <bruno@HyPer-Linux.org> :
+	- Fix path to perl script functions in first patch file
+
+* Thu Oct 02 2003 Lenny Cartier <lenny@mandrakesoft.com> 2.9-3mdk
+- disable wrong requires
+
+* Thu Sep 18 2003 Lenny Cartier <lenny@mandrakesoft.com> 2.9-2mdk
+- from Bruno Cornec <bruno@HyPer-Linux.org> :
+	- Corrections for rpmlint -i
+	- Now creates /etc/mirror.conf
+
+* Fri Aug 15 2003 Bruno Cornec <bruno@HyPer-Linux.org> 2.9-1mdk
+- Creation of first MDK package
+- based on Connectiva spec file from Ricardo Erbano <erbano@conectiva.com>

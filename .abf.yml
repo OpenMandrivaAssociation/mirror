@@ -1,2 +1,6 @@
 sources:
-  "mirror.tar.bz2:"	1b05753209a17333b5957e020b9475bd96119a40
+  "mirror-2.9-mandrake.patch.bz2": a830680652596fbd62964f92cfa96e37f2ce54b7
+  "mirror-deldir.patch.bz2": b640808ee1f403ae36fcb6a64cd36a0065396f01
+  "mirror-ftp.pl_wupatch.patch.bz2": 76e257a3733d0cc8f3b820b8f9821db6d32d0fd9
+  "mirror-no-directory-goback.patch.bz2": 0c5153cfe86010b42fc11c3de1a19c489fbc4fc1
+  "mirror.tar.bz2": 1b05753209a17333b5957e020b9475bd96119a40
