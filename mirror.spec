@@ -9,7 +9,7 @@ Summary: Perl program to mirror FTP sites
 License: BSD style
 Group: Networking/File transfer
 Source:  ftp://sunsite.org.uk/packages/mirror/%{name}.tar.bz2  
-URL: http://sunsite.doc.ic.ac.uk/packages/%{name}/
+URL: https://sunsite.doc.ic.ac.uk/packages/%{name}/
 Patch: %{name}-%{version}-mandrake.patch.bz2
 Patch1: %{name}-no-directory-goback.patch.bz2
 Patch2: %{name}-ftp.pl_wupatch.patch.bz2
